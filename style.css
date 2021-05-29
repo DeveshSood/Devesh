@@ -25,6 +25,8 @@ p{
 
 img {
     border: 5px solid rgb(5, 4, 7);
+    max-width:100%;
+    height:auto;
 }
 
 #myBtn{
