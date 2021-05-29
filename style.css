@@ -24,7 +24,9 @@ p{
 }
 
 img {
-    border: 5px solid rgb(5, 4, 7);
+    border-style: groove;
+    border: 6px solid rgb(78, 28, 28);
+    border-radius: 10px;
     max-width:100%;
     height:auto;
 }
