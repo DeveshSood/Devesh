@@ -1,3 +1,10 @@
+.main{
+    background-color: rgb(0, 167, 0);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
 .row{
     display:flex;
     justify-content: space-evenly;
@@ -10,7 +17,7 @@ HR{
 
 body{
     background-image:url(images/back.jpg);
-    border: 6px solid rgb(0, 0, 0);
+    border: 6px solid rgb(55, 31, 141);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -21,12 +28,12 @@ H3{
 
 p{
     font-size: 30px;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 img {
     border-style: groove;
-    border: 6px solid rgb(78, 28, 28);
+    border: 8px solid rgb(78, 28, 28);
     border-radius: 10px;
     max-width:100%;
     height:auto;
@@ -41,7 +48,7 @@ img {
     font-size: 16px;
     border: 5px;
     outline: none;
-    background-color: rgb(17, 19, 192);
+    background-color: rgb(0, 3, 156);
     color: white;
     cursor: pointer;
     padding: 15px;
@@ -53,7 +60,7 @@ img {
 }
 
 .header{
-    background-color: cadetblue;
+    background-color: darkcyan;
     display: flex;
     justify-content: space-between;
 }
