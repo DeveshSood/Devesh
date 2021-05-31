@@ -2,7 +2,7 @@
 <HTML>
     <Head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <Title>About Me & My Images</Title>
+        <Title>Gallary</Title>
         <link rel="icon" href="images/logo1.png" type="image/png">
         <link
             rel="StyleSheet";
@@ -17,6 +17,32 @@
         </Style>
     </Head>
     <Body align = "center">
+        <div class="navbar"  id="myTopnav">
+            <A href="index.html">Home</A>
+            <A href="web2.html">Games</A>
+            <div class="navbar-right">
+                <A href="aboutme.html">About Me</A>
+                <A href="myimgs.html"  class="active">Gallery</A>
+            </div>
+        </div>
+
+        <BR><BR><BR><BR>
+
+        <A href="javascript:void(0);" class="icon" onclick="myFunction()"</a>
+            <i cLASS="fa fa-bars"></i>
+        </A>
+
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+        </script>
+
         <div class="header">
             <H1>About Me :-</H1>
             <div class="menu">

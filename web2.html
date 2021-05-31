@@ -3,13 +3,41 @@
     <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/logo3.png" type="image/png">
-        <title>Devesh Sood 2nd Website</title>
+        <title>My Games</title>
         <link rel = "stylesheet"
               type = "text/css"
-              href = "styleweb2.css" />
+              href = "styleweb2.css"
+        />
+
     </head>
 
     <body>
+        <div class="navbar"  id="myTopnav">
+            <A href="index.html">Home</A>
+            <A href="web2.html" class="active">Games</A>
+            <div class="navbar-right">
+                <A href="aboutme.html">About Me</A>
+                <A href="myimgs.html">Gallery</A>
+            </div>
+        </div>
+
+        <BR><BR><BR><BR>
+
+        <A href="javascript:void(0);" class="icon" onclick="myFunction()"</a>
+            <i cLASS="fa fa-bars"></i>
+        </A>
+
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+        </script>
+
         <button onclick="topFunction()" id="myBtn" title="Go To Top">⇧</button>
 
         <script>

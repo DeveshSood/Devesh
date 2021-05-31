@@ -17,6 +17,32 @@
         </Style>
     </Head>
     <Body align = "center">
+        <div class="navbar"  id="myTopnav">
+            <A href="index.html">Home</A>
+            <A href="web2.html">Games</A>
+            <div class="navbar-right">
+                <A href="aboutme.html" class="active">About Me</A>
+                <A href="myimgs.html">Gallery</A>
+            </div>
+        </div>
+
+        <BR><BR><BR><BR>
+
+        <A href="javascript:void(0);" class="icon" onclick="myFunction()"</a>
+            <i cLASS="fa fa-bars"></i>
+        </A>
+
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+        </script>
+
         <div class="header">
             <H1>About Me :-</H1>
                 <div class="menu">
@@ -34,6 +60,6 @@
             I also make videos(Vloging,Gaming and Unboxing) on YouTube, My channel - 'Majesty Beast'.<BR>
         </B></font></P>
 
-        <P><font size ="5"><B><A href="web2.html">My 2nd Website</A></B></font></P>
+        <P><font size ="5"><B><A href="web2.html">Games</A></B></font></P>
     </Body>
 </HTML>
