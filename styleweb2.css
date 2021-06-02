@@ -14,7 +14,7 @@ H3{
 
 p{
     font-size: 30px;
-    color: blanchedalmond;
+    color: rgb(25, 4, 219);
 }
 
 img {
@@ -123,15 +123,15 @@ body{
     display: none;
   }
   
-  @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
       display: block;
     }
-  }
+}
   
-  @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive .icon {
       position: absolute;
@@ -143,4 +143,20 @@ body{
       display: block;
       text-align: left;
     }
-  }
+}
+
+.item{
+    position: relative;
+}
+
+.item p{
+    opacity: 0;
+    position: absolute;
+    top: 45%;
+    left: 52.5%;
+    transform: translate(-55%, -55%);
+}
+
+.item:hover p{
+    opacity: 1;
+}
