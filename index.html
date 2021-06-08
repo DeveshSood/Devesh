@@ -9,17 +9,30 @@
             href="style.css";
 
         />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="icon" href="images/logo2.png" type="image/png">
     </Head>
     <Body align="center">
         <div class="navbar"  id="myTopnav">
             <A href="index.html" class="active">Home</A>
             <A href="web2.html">Games</A>
-            <div class="navbar-right">
-                <A href="aboutme.html">About Me</A>
-                <A href="myimgs.html">Gallery</A>
-            </div>
+            <A href="aboutme.html">About Me</A>
+            <A href="myimgs.html">Gallery</A>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
+
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "navbar") {
+                x.className += " responsive";
+              } else {
+                x.className = "navbar";
+              }
+            }
+        </script>
 
         <button onclick="topFunction()" id="myBtn" title="Go To Top">⇧</button>
 

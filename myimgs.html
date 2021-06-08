@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <Title>Gallary</Title>
         <link rel="icon" href="images/logo1.png" type="image/png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link
             rel="StyleSheet";
             type="text/css";
@@ -20,18 +21,49 @@
         <div class="navbar"  id="myTopnav">
             <A href="index.html">Home</A>
             <A href="web2.html">Games</A>
-            <div class="navbar-right">
-                <A href="aboutme.html">About Me</A>
-                <A href="myimgs.html"  class="active">Gallery</A>
-            </div>
+            <A href="aboutme.html">About Me</A>
+            <A href="myimgs.html" class="active">Gallery</A>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
 
-        <BR><BR><BR><BR>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "navbar") {
+                x.className += " responsive";
+              } else {
+                x.className = "navbar";
+              }
+            }
+        </script>
+
+    <button onclick="topFunction()" id="myBtn" title="Go To Top">⇧</button>
+
+    <script>
+    var mybutton = document.getElementById("myBtn");
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 420 || document.documentElement.scrollTop > 420) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+</script>
 
         <div class="header">
-            <H1>About Me :-</H1>
+            <H1>Gallery :-</H1>
             <div class="menu">
-                <A href="web2.html"><img src="images/goback.png" width=40 height=20/></A>
+                <A href="aboutme.html"><img src="images/goback.png" width=40 height=20/></A>
                 <A href="index.html"><img src="images/home.png" width=40 height=30/></a>
             </div>
         </div>
