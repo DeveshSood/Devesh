@@ -10,12 +10,6 @@
             type="text/css";
             href="styleweb2.css";
         />
-        <Style>
-            img {
-                    display: block;
-                    margin-right: auto;
-            }
-        </Style>
     </Head>
     <Body align = "center">
         <div class="navbar"  id="myTopnav">
@@ -68,11 +62,44 @@
             </div>
         </div>
         
-        <div class="row">
-            <div class="column"><A href="aboutme.html"><img src="images/ds.png" width=351 height=351/></a></div>
-            <div class="column"><A href="aboutme.html"><img src="images/profile.png" width=351 height=351/></a></div>
-            <div class="column"><A href="aboutme.html"><img src="images/mb.png" width=351 height=351/></a></div>
+        <div class="slideshow-container">
+          <div class="mySlides1">
+            <img src="images/ds.png" style="width:50%">
+          </div>
+        
+          <div class="mySlides1">
+            <img src="images/profile.png" style="width:50%">
+          </div>
+        
+          <div class="mySlides1">
+            <img src="images/mb.png" style="width:50%">
+          </div>
+        
+          <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
         </div>
+
+        <script>
+          var slideIndex = [1,1];
+          var slideId = ["mySlides1", "mySlides2"]
+          showSlides(1, 0);
+          showSlides(1, 1);
+          
+          function plusSlides(n, no) {
+            showSlides(slideIndex[no] += n, no);
+          }
+          
+          function showSlides(n, no) {
+            var i;
+            var x = document.getElementsByClassName(slideId[no]);
+            if (n > x.length) {slideIndex[no] = 1}    
+            if (n < 1) {slideIndex[no] = x.length}
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";  
+            }
+            x[slideIndex[no]-1].style.display = "block";  
+          }
+        </script>
             
         <P><font size ="5"><B>
             I am Devesh Sood, I Study in 10th Standard, I live in Kullu(175101), Himachal Pradesh, India.

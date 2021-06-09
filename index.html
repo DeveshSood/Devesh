@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <HTML>
     <Head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
         <Title>Home - Devesh Sood</Title>
         <link
             rel="StyleSheet";
@@ -76,11 +76,95 @@
 
         <BR>
 
-        <div class="row">
-            <div class="column"><A href="aboutme.html"><img src="images/ds.png" width=351 height=351/></a></div>
-            <div class="column"><A href="aboutme.html"><img src="images/profile.png" width=351 height=351/></a></div>
-            <div class="column"><A href="aboutme.html"><img src="images/mb.png" width=351 height=351/></a></div>
-        </div>
+            <div class="row">
+                <div class="column">
+                  <img src="images/ds.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                  <img src="images/profile.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                  <img src="images/mb.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                </div>
+              </div>
+              
+              <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+              
+                  <div class="mySlides">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="images/ds.png" style="width:50%">
+                  </div>
+              
+                  <div class="mySlides">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="images/profile.png" style="width:50%">
+                  </div>
+              
+                  <div class="mySlides">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="images/mb.png" style="width:50%">
+                  </div>
+                  
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              
+                  <div class="caption-container">
+                    <p id="caption"></p>
+                  </div>
+              
+                  
+                  <div class="indeximg">
+                    <img class="demo cursor" src="images/DeveshSood.png" style="width:100%" onclick="currentSlide(1)" alt="Devesh Sood">
+                  </div>
+                  <div class="indeximg">
+                    <img class="demo cursor" src="images/profile.png" style="width:100%" onclick="currentSlide(2)" alt="Majesty Beast">
+                  </div>
+                  <div class="indeximg">
+                    <img class="demo cursor" src="images/mb.png" style="width:100%" onclick="currentSlide(3)" alt="Majesty Beast">
+                  </div>
+                </div>
+              </div>
+              
+              <script>
+              function openModal() {
+                document.getElementById("myModal").style.display = "block";
+              }
+              
+              function closeModal() {
+                document.getElementById("myModal").style.display = "none";
+              }
+              
+              var slideIndex = 1;
+              showSlides(slideIndex);
+              
+              function plusSlides(n) {
+                showSlides(slideIndex += n);
+              }
+              
+              function currentSlide(n) {
+                showSlides(slideIndex = n);
+              }
+              
+              function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                var captionText = document.getElementById("caption");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                captionText.innerHTML = dots[slideIndex-1].alt;
+              }
+              </script>
         
         <HR color = "black">
 
