@@ -1,145 +1,145 @@
 .main{
-    background-color: rgb(0, 167, 0);
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+  background-color: rgb(0, 167, 0);
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .row{
-    display:flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+  display:flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 HR{
-    height:7px;border-width:7; color:rgb(42, 156, 19);background-color:rgb(52, 20, 195)"
+  height:7px;border-width:7; color:rgb(42, 156, 19);background-color:rgb(52, 20, 195)"
 }
 
 body{
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-image:url(images/back.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image:url(images/back.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 H3{
-    font-size: 24px;
+  font-size: 24px;
 }
 
 p{
-    font-size: 30px;
-    color: rgb(0, 0, 0);
+  font-size: 30px;
+  color: rgb(0, 0, 0);
 }
 
 img {
-    border-style: groove;
-    border: 8px solid rgb(78, 28, 28);
-    border-radius: 10px;
-    max-width:100%;
-    height:auto;
+  border-style: groove;
+  border: 8px solid rgb(78, 28, 28);
+  border-radius: 10px;
+  max-width:100%;
+  height:auto;
 }
 
 #myBtn{
-    display: none;
-    position: fixed;
-    bottom: 82px;
-    right: 27px;
-    z-index: 99;
-    font-size: 16px;
-    border: 5px;
-    outline: none;
-    background-color: rgb(0, 3, 156);
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 10px;
+  display: none;
+  position: fixed;
+  bottom: 82px;
+  right: 27px;
+  z-index: 99;
+  font-size: 16px;
+  border: 5px;
+  outline: none;
+  background-color: rgb(0, 3, 156);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
 }
 
 #myBtn:hover{
-    background-color: rgb(138, 9, 9);
+  background-color: rgb(138, 9, 9);
 }
 
 .header{
-    background-color: darkcyan;
-    display: flex;
-    justify-content: space-between;
+  background-color: darkcyan;
+  display: flex;
+  justify-content: space-between;
 }
 
 .site-description{
-    display: flex;
-    flex-direction: column;
-    justify-content: first baseline;
+  display: flex;
+  flex-direction: column;
+  justify-content: first baseline;
 }
 
 .grid{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .footer{
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .navbar{
-    background-color: rgb(37,35,35);
-    overflow: hidden;
+  background-color: rgb(37,35,35);
+  overflow: hidden;
 }
 
 .navbar a{
-    float: left;
-    display: block;
-    color: antiquewhite;
-    padding: 20px 30px;
-    text-align: center;
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
+  float: left;
+  display: block;
+  color: antiquewhite;
+  padding: 20px 30px;
+  text-align: center;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .navbar-right{
-    float: right;
+  float: right;
 }
 
 .navbar a:hover{
-    background-color: beige;
-    color:black
+  background-color: beige;
+  color:black
 }
 
 .navbar a.active{
-    background-color: green;
-    color:greenyellow
+  background-color: green;
+  color:greenyellow
 }
 
 .navbar .icon {
-    display: none;
+  display: none;
 }
 
 @media screen and (max-width: 600px) {
-    .navbar a:not(:first-child) {display: none;}
-    .navbar a.icon {
-      float: right;
-      display: block;
-    }
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
   }
-  
+}
+
 @media screen and (max-width: 600px) {
-    .navbar.responsive {position: relative;}
-    .navbar.responsive .icon {
-      position: relative;
-      right: 0;
-      top: 0;
-    }
-    .navbar.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
+  .navbar.responsive {position: relative;}
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
 
 A {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 body {
