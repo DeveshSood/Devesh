@@ -14,7 +14,7 @@ H3{
 
 p{
     font-size: 30px;
-    color: rgb(25, 4, 219);
+    color: rgb(0, 21, 209);
 }
 
 img {
@@ -80,8 +80,6 @@ p,h2{
 }
 
 body{
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
     background-color: #242323;
     border: 6px solid rgb(7, 55, 189);
     color: blanchedalmond;
